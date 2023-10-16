@@ -1,15 +1,19 @@
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import './App.css'
+import NavBar from './component/Navbar'
+import Footer from './component/Footer'
+
+
 
 function App() {
   const router = createBrowserRouter([
     {
       path: '/',
-      element: <h1>Accueil</h1>
+      element: <NavBar/>
     },
     {
       path: '/starters',
-      element: <h1>Starters</h1>
+      element: <h1>starters</h1>
     },
     {
       path: '/dishes',
@@ -18,10 +22,12 @@ function App() {
     {
       path: '/desserts',
       element: <h1>Desserts</h1>
-    }
+    },
   ])
 
-  return <RouterProvider router={router} />
+  return (
+          <RouterProvider router={router}/>       
+  )
 }
 
 export default App
