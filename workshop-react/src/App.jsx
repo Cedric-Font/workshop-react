@@ -5,7 +5,7 @@ import Recipe from './component/Recipe'
 import Starters from './component/Starters'
 import Dishes from './component/Dishes'
 import Desserts from './component/Desserts'
-import NavBar from './component/Navbar'
+import NavBar from './component/NavBar'
 import Footer from './component/Footer'
 import Categories from './component/Categories'
 
@@ -18,15 +18,18 @@ function App() {
 
     {
       img: "/src/assets/starter1.png",
-      title: "Starters"
+      title: "Starters",
+      redirect: '/starters',
     },
     {
       img: "/src/assets/starter2.png",
-      title: "Dishes"
+      title: "Dishes",
+      redirect: '/dishes',
     },
     {
       img: "/src/assets/starter3.png",
-      title: "Desserts"
+      title: "Desserts",
+      redirect: '/desserts',
     },
   ]
   const router = createBrowserRouter([
@@ -34,26 +37,26 @@ function App() {
       path: '/',
 
       element:
-      <div>
-      <NavBar/>
-      <div className='colorDiv' >
-      <div 
-      className='mainContainer' > 
-      <h2 className='welcome' >Welcome</h2>
-      <img className='firstImg' src="/src/assets/starter4.png" alt="" />
-      <p className='acceuilParagraf' >Your futur recipe <br /> is here!</p>
-      <Categories acceuil={acceuil} />
-      </div>
-      </div>
-      </div>
+        <div>
+          <NavBar />
+          <div className='colorDiv' >
+            <div
+              className='mainContainer' >
+              <h2 className='welcome' >Welcome</h2>
+              <img className='firstImg' src="/src/assets/starter4.png" alt="" />
+              <p className='acceuilParagraf' >Your futur recipe <br /> is here!</p>
+              <Categories acceuil={acceuil} />
+            </div>
+          </div>
+        </div>
 
     },
     {
       path: '/starters',
-      element: 
-      <div className="mainContainer" >
-      <Starters />
-      </div>
+      element:
+        <div className="mainContainer" >
+          <Starters />
+        </div>
     },
 
     {
@@ -78,18 +81,18 @@ function App() {
 
 
 
-  
 
-  return ( <div>
-  <RouterProvider router={router} />
 
-  
+  return (<div>
+    <RouterProvider router={router} />
 
-  
+
+
+
 
   </div>
-  
-  
+
+
   )
 
 
