@@ -1,14 +1,18 @@
+import styles from './RecapRecipe.module.css'
+
 function RecapRecipe({ props }) {
 
     return (
         <>
+        <div className={styles.mainContainer} >
             {console.log(props)}
-            <img src={props.imgSrc} alt={props.nameRecipe} />
+            <img  className={styles.img} src={props.imgSrc} alt={props.nameRecipe} />
             <ul>
-                <li>{props.nameRecipe}</li>
-                <li>{props.descriptionRecipe}</li>
-                <li>{props.cookingTime}</li>
+                <li className={styles.name} >{props.nameRecipe}</li>
+                <li className={styles.descriptionRecipe} >{props.descriptionRecipe}</li>
+                <li className={styles.time} >{props.cookingTime}</li>
             </ul>
+            </div>
         </>
     )
 }

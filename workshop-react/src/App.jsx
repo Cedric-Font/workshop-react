@@ -13,7 +13,10 @@ function App() {
     },
     {
       path: '/starters',
-      element: <Starters />
+      element: 
+      <div className="mainContainer" >
+      <Starters />
+      </div>
     },
     /*{
       path: '/dishes',

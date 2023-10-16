@@ -2,6 +2,7 @@ import { useState } from "react";
 import NavBar from './NavBar'
 import recipes from '/src/assets/recipesList.js'
 import RecapRecipe from "./RecapRecipe";
+import styles from "./recipe.module.css"
 
 
 export default function Starters() {
