@@ -2,7 +2,6 @@ import React from "react";
 import "./NavBar.css";
 import Footer from "./Footer";
 
-
 function NavBar() {
   const myFunction = () => {
     var x = document.getElementById("myTopnav");
@@ -15,7 +14,7 @@ function NavBar() {
 
   return (
     <>
-    <Footer/>
+   
 
     <nav>
       <div className="topnav" id="myTopnav">

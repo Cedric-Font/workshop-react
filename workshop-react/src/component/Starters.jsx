@@ -12,9 +12,10 @@ export default function Starters() {
 
     return (
         <>
-            <h1 className={styles.test} >Starters</h1>
             <NavBar />
-            {display === 0 ? recipes.map(recipe => recipe.type == 'starter' ? < RecapRecipe key={recipe.id} recipe={recipe} setDisplay={setDisplay} /> : null) : <Navigate to={`/recipe/${display}`}></Navigate>}
+            <h1 className={styles.test} >Starters</h1>
+            {display === 0 ? recipes.map(recipe => <RecapRecipe key={recipe.id} recipe={recipe} setDisplay={setDisplay} />) : <Navigate to={`/recipe/${display}`}></Navigate>}
+
         </>
     )
 }

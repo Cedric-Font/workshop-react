@@ -1,6 +1,7 @@
 footer {
     position: fixed;
-    background-color: #DAD6B7;
+    background: rgb(193,90,6);
+    background: linear-gradient(90deg, rgba(193,90,6,1) 0%, rgba(255,136,0,1) 100%);
     bottom: 0;
     left: 0;
     right: 0;
