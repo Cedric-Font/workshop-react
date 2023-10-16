@@ -1,5 +1,9 @@
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import './App.css'
+import RecapRecipe from './component/RecapRecipe'
+import Recipe from './component/Recipe'
+import { useState } from 'react'
+
 
 function App() {
   const router = createBrowserRouter([
@@ -9,15 +13,29 @@ function App() {
     },
     {
       path: '/starters',
-      element: <h1>Starters</h1>
+      element: (<>
+      <NavBar/>
+      const [display, setDisplay] = useState(0);
+      display === 0 ? {recipes.map(recipe => <RecapRecipe key={recipe.id}/>)} : null,
+      </>)
     },
     {
       path: '/dishes',
-      element: <h1>Dishes</h1>
+      element: (<>
+      <NavBar/>
+      const [display, setDisplay] = useState(0);
+      display === 0 ? {recipes.map(recipe => <RecapRecipe key={recipe.id}/>)} : null,
+      </>
+      )
     },
     {
       path: '/desserts',
-      element: <h1>Desserts</h1>
+      element: (<>
+      <NavBar/>
+      const [display, setDisplay] = useState(0);
+      display === 0 ? {recipes.map(recipe => <RecapRecipe key={recipe.id}/>)} : null,
+      </>
+      )
     }
   ])
 
