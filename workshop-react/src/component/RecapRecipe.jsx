@@ -1,15 +1,14 @@
-function RecapRecipe (props){
+function RecapRecipe({ props }) {
 
     return (
         <>
-        <figure>
-            <img src={props.imgSrc} alt={props.imgSrc}/>
-                <ul>
-                   <li>{props.nameRecipe}</li> 
-                   <li>{props.descriptionRecipe}</li>
-                   <li>{props.cookingTime}</li>
-                </ul>
-        </figure>
+            {console.log(props)}
+            <img src={props.imgSrc} alt={props.nameRecipe} />
+            <ul>
+                <li>{props.nameRecipe}</li>
+                <li>{props.descriptionRecipe}</li>
+                <li>{props.cookingTime}</li>
+            </ul>
         </>
     )
 }

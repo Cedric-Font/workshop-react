@@ -2,7 +2,7 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import './App.css'
 import RecapRecipe from './component/RecapRecipe'
 import Recipe from './component/Recipe'
-import { useState } from 'react'
+import Starters from './component/Starters'
 
 
 function App() {
@@ -13,30 +13,16 @@ function App() {
     },
     {
       path: '/starters',
-      element: (<>
-      <NavBar/>
-      const [display, setDisplay] = useState(0);
-      display === 0 ? {recipes.map(recipe => <RecapRecipe key={recipe.id}/>)} : null,
-      </>)
+      element: <Starters />
     },
-    {
+    /*{
       path: '/dishes',
-      element: (<>
-      <NavBar/>
-      const [display, setDisplay] = useState(0);
-      display === 0 ? {recipes.map(recipe => <RecapRecipe key={recipe.id}/>)} : null,
-      </>
-      )
+      element: <Dishes /> >
     },
     {
       path: '/desserts',
-      element: (<>
-      <NavBar/>
-      const [display, setDisplay] = useState(0);
-      display === 0 ? {recipes.map(recipe => <RecapRecipe key={recipe.id}/>)} : null,
-      </>
-      )
-    }
+      element: <Desserts />
+    }*/
   ])
 
   return <RouterProvider router={router} />
