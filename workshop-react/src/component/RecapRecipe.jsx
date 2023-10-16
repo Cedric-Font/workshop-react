@@ -1,15 +1,15 @@
-function RecapRecipe({ props }) {
+function RecapRecipe({ recipe, setDisplay }) {
 
     return (
-        <>
-            {console.log(props)}
-            <img src={props.imgSrc} alt={props.nameRecipe} />
+        <div onClick={() => setDisplay(recipe.id)}>
+            {console.log(recipe)}
+            <img src={recipe.imgSrc} alt={recipe.nameRecipe} />
             <ul>
-                <li>{props.nameRecipe}</li>
-                <li>{props.descriptionRecipe}</li>
-                <li>{props.cookingTime}</li>
+                <li>{recipe.nameRecipe}</li>
+                <li>{recipe.descriptionRecipe}</li>
+                <li>{recipe.cookingTime}</li>
             </ul>
-        </>
+        </div>
     )
 }
 

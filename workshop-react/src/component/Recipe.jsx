@@ -1,13 +1,19 @@
-function Recipe (props) {
+import { useParams } from 'react-router-dom';
+import recipes from '/src/assets/recipesList.js';
 
-    return <>
-       <h1>{props.nameRecipe}</h1>
-       <img src={props.imgSrc} alt ={props.imgSrc}/>
-       <p>{props.cookingTime}</p>
-       <p>{props.ingredients}</p>
-       <p>{props.recipeText}</p>
-       <p>{props.recipeSource}</p>
-    </>
+function Recipe() {
+    const { id } = useParams();
+    console.log(recipes[id - 1]);
+    return (
+        <>
+            <h1>{recipes[id - 1].nameRecipe}</h1>
+            <img src={recipes[id - 1].imgSrc} alt={recipes[id - 1].imgSrc} />
+            <p>{recipes[id - 1].cookingTime}</p>
+            <p>{recipes[id - 1].ingredients}</p>
+            <p>{recipes[id - 1].recipeText}</p>
+            <p>{recipes[id - 1].recipeSource}</p>
+        </>
+    )
 }
 
 export default Recipe

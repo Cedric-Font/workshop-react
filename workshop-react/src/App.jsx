@@ -15,14 +15,10 @@ function App() {
       path: '/starters',
       element: <Starters />
     },
-    /*{
-      path: '/dishes',
-      element: <Dishes /> >
-    },
     {
-      path: '/desserts',
-      element: <Desserts />
-    }*/
+      path: '/recipe/:id',
+      element: <Recipe />
+    }
   ])
 
   return <RouterProvider router={router} />
