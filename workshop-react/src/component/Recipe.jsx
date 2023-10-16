@@ -1,17 +1,23 @@
-import styles from "./Recipe.module.css"
 
-function Recipe (props) {
+import { useParams } from 'react-router-dom';
+import recipes from '/src/assets/recipesList.js';
 
-    return <>
-        <div className={styles.container} >
-       <h1 className={styles.name} >{props.nameRecipe}</h1>
-       <img  className={styles.img} src={props.imgSrc} alt ={props.imgSrc}/>
-       <p className={styles.time} >{props.cookingTime}</p>
-       <p className={styles.ingredients} >{props.ingredients}</p>
-       <p className={styles.text} >{props.recipeText}</p>
-       <p className={styles.resource} >{props.recipeSource}</p>
-       </div>
-    </>
+
+
+function Recipe() {
+    const { id } = useParams();
+    console.log(recipes[id - 1]);
+    return (
+        <>
+            <h1>{recipes[id - 1].nameRecipe}</h1>
+            <img src={recipes[id - 1].imgSrc} alt={recipes[id - 1].imgSrc} />
+            <p>{recipes[id - 1].cookingTime}</p>
+            <p>{recipes[id - 1].ingredients}</p>
+            <p>{recipes[id - 1].recipeText}</p>
+            <p>{recipes[id - 1].recipeSource}</p>
+        </>
+    )
+
 }
 
 export default Recipe

@@ -1,8 +1,10 @@
 import { useState } from "react";
-import NavBar from './NavBar'
-import recipes from '/src/assets/recipesList.js'
+import NavBar from './NavBar';
+import recipes from '/src/assets/recipesList.js';
 import RecapRecipe from "./RecapRecipe";
-import styles from "./recipe.module.css"
+import styles from './Starter.module.css'
+import { Navigate } from "react-router-dom";
+
 
 
 export default function Starters() {
@@ -10,9 +12,9 @@ export default function Starters() {
 
     return (
         <>
-            <h1>Starters</h1>
+            <h1 className={styles.test} >Starters</h1>
             <NavBar />
-            {display === 0 ? recipes.map(recipe => <RecapRecipe key={recipe.id} props={recipe} />) : null}
+            {display === 0 ? recipes.map(recipe => <RecapRecipe key={recipe.id} recipe={recipe} setDisplay={setDisplay} />) : <Navigate to={`/recipe/${display}`}></Navigate>}
         </>
     )
 }

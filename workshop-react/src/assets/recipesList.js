@@ -1,6 +1,6 @@
 let recipesList = [
     {
-        id: 0,
+        id: 1,
         nameRecipe: "Gratin Dauphinois",
         type: "dish",
         descriptionRecipe: "Plat typique de la région Dauphinoise à base de pomme de terre et de lait",
@@ -19,7 +19,7 @@ let recipesList = [
         recipeSource: "https: //www.ricardocuisine.com/recettes/4915-gratin-dauphinois-le-meilleur"
     },
     {
-        id: 1,
+        id: 2,
         nameRecipe: "Mousse au chocolat",
         type: "dessert",
         descriptionRecipe: "Une fine mousse chocolatée, grand classique des tables françaises",
