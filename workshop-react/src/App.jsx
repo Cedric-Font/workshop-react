@@ -1,11 +1,37 @@
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import './App.css'
+import Categories from './component/Categories'
+
 
 function App() {
+  let acceuil = [
+
+    {
+      img: "/src/assets/starter1.png",
+      title: "Starters"
+    },
+    {
+      img: "/src/assets/starter2.png",
+      title: "Dishes"
+    },
+    {
+      img: "/src/assets/starter3.png",
+      title: "Desserts"
+    },
+  ]
   const router = createBrowserRouter([
     {
       path: '/',
-      element: <h1>Accueil</h1>
+      element:
+      <div className='colorDiv' >
+      <div 
+      className='mainContainer' > 
+      <h2 className='welcome' >Welcome</h2>
+      <img className='firstImg' src="/src/assets/starter4.png" alt="" />
+      <p className='acceuilParagraf' >Your futur recipe <br /> is here!</p>
+      <Categories acceuil={acceuil} />
+      </div>
+      </div>
     },
     {
       path: '/starters',
@@ -21,7 +47,22 @@ function App() {
     }
   ])
 
-  return <RouterProvider router={router} />
+
+
+  
+
+  return ( <div>
+  <RouterProvider router={router} />
+
+  
+
+  
+
+  </div>
+  
+  
+  )
+
 }
 
 export default App
