@@ -1,17 +1,16 @@
 import styles from './RecapRecipe.module.css'
 
-function RecapRecipe(props ) {
+function RecapRecipe({ recipe, setDisplay }) {
 
     return (
         <>
-        <div className={styles.mainContainer} >
-            {console.log(props)}
-            <img  className={styles.img} src={props.recipe.imgSrc} alt={props.recipe.nameRecipe} />
-            <ul>
-                <li className={styles.name} >{props.recipe.nameRecipe}</li>
-                <li className={styles.descriptionRecipe} >{props.recipe.descriptionRecipe}</li>
-                <li className={styles.time} >{props.recipe.cookingTime}</li>
-            </ul>
+            <div className={styles.mainContainer} onClick={() => setDisplay(recipe.id)}>
+                <img className={styles.img} src={recipe.imgSrc} alt={recipe.nameRecipe} />
+                <ul>
+                    <li className={styles.name} >{recipe.nameRecipe}</li>
+                    <li className={styles.descriptionRecipe} >{recipe.descriptionRecipe}</li>
+                    <li className={styles.time} >{recipe.cookingTime}</li>
+                </ul>
             </div>
         </>
 
