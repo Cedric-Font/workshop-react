@@ -33,6 +33,7 @@ function App() {
       path: '/',
 
       element:
+      <div>
       <NavBar/>
       <div className='colorDiv' >
       <div 
@@ -41,6 +42,7 @@ function App() {
       <img className='firstImg' src="/src/assets/starter4.png" alt="" />
       <p className='acceuilParagraf' >Your futur recipe <br /> is here!</p>
       <Categories acceuil={acceuil} />
+      </div>
       </div>
       </div>
 
