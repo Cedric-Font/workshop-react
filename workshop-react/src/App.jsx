@@ -5,11 +5,16 @@ import Recipe from './component/Recipe'
 import Starters from './component/Starters'
 import Dishes from './component/Dishes'
 import Desserts from './component/Desserts'
+<<<<<<< HEAD
+import Categories from './component/Categories'
+
+=======
 import NavBar from './component/Navbar'
 import Footer from './component/Footer'
 import Categories from './component/Categories'
 
 
+>>>>>>> 8a44ee4a36fa4f815ad62ce3965135c38d9965a9
 
 
 function App() {
@@ -49,8 +54,17 @@ function App() {
     },
     {
       path: '/starters',
-      element: <Starters />
+      element: 
+      <div className="mainContainer" >
+      <Starters />
+      </div>
     },
+
+    {
+      path: '/recipe/:id',
+      element: <Recipe />
+    },
+
     {
       path: '/recipe/:id',
       element: <Recipe />
