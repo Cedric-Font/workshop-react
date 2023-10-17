@@ -1,6 +1,7 @@
 .topnav {
     overflow: hidden;
-    background-color: #DAD6B7;
+    background: rgb(193,90,6);
+    background: linear-gradient(90deg, rgba(193,90,6,1) 0%, rgba(255,136,0,1) 46%, rgba(223,185,3,1) 90%);
     display: inline-flex;
     align-items: center;
     width: 100%;

@@ -12,8 +12,9 @@ export default function Starters() {
 
     return (
         <>
+        <NavBar />
             <h1 className={styles.test} >Starters</h1>
-            <NavBar />
+          
             {display === 0 ? recipes.map(recipe => <RecapRecipe key={recipe.id} recipe={recipe} setDisplay={setDisplay} />) : <Navigate to={`/recipe/${display}`}></Navigate>}
         </>
     )
