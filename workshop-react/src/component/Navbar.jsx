@@ -15,8 +15,6 @@ function NavBar() {
 
   return (
     <>
-    <Footer/>
-
     <nav>
       <div className="topnav" id="myTopnav">
         <div className="logo-title">

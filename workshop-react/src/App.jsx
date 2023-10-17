@@ -5,7 +5,7 @@ import Recipe from './component/Recipe'
 import Starters from './component/Starters'
 import Dishes from './component/Dishes'
 import Desserts from './component/Desserts'
-import NavBar from './component/Navbar'
+import NavBar from './component/NavBar'
 import Footer from './component/Footer'
 import Categories from './component/Categories'
 
