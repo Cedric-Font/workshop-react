@@ -18,6 +18,10 @@ function App() {
       element: <Starters />
     },
     {
+      path: '/recipe/:id',
+      element: <Recipe />
+    },
+    {
       path: '/dishes',
       element: <Dishes />
     },
