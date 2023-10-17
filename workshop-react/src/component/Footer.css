@@ -1,0 +1,18 @@
+footer {
+    position: fixed;
+    background-color: #DAD6B7;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 8px;
+    text-align: center;
+    color: black;
+    font-family: fantasy;
+    font-size:x-large;
+  }
+
+  @media screen and (max-width: 600px) {
+   footer {
+    font-size: medium;
+   }
+  }
