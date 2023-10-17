@@ -3,4 +3,46 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+}
+
+.firstImg{
+    border-radius: 20px;
+    width: 80%;
+    height: 30rem;
+    object-fit: cover;
+    box-shadow: 10px 5px 5px rgb(189, 189, 189);
+}
+
+#root{
+    background-color: #e9e5ca;
+    background-size: 30%;
+    background-color: #fff; 
+    background-image: linear-gradient(to right, #e9e5ca 100%, rgba(181, 181, 181, 0) 100%);
+    background-repeat: no-repeat;
+}
+
+.welcome{
+    position: absolute;
+    margin-left: 60%;
+    background-color: rgba(0, 0, 0, 0.337);
+    border-radius: 5px;
+    color: #fff;
+    padding: 3%;
+}
+
+.acceuilParagraf{
+    margin-top: -2rem;
+    margin-right: 50%;
+    background-color: rgba(0, 0, 0, 0.337);
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 900;
+    padding: 5%;
+}
+
+body{
+    padding: 0px;
+    margin: 0px;
+
 }
