@@ -1,8 +1,14 @@
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import './App.css'
+import RecapRecipe from './component/RecapRecipe'
+import Recipe from './component/Recipe'
+import Starters from './component/Starters'
+import Dishes from './component/Dishes'
+import Desserts from './component/Desserts'
 import NavBar from './component/Navbar'
 import Footer from './component/Footer'
 import Categories from './component/Categories'
+
 
 
 
@@ -41,16 +47,20 @@ function App() {
     },
     {
       path: '/starters',
-      element: <h1>starters</h1>
+      element: <Starters />
+    },
+    {
+      path: '/recipe/:id',
+      element: <Recipe />
     },
     {
       path: '/dishes',
-      element: <h1>Dishes</h1>
+      element: <Dishes />
     },
     {
       path: '/desserts',
-      element: <h1>Desserts</h1>
-    },
+      element: <Desserts />
+    }
   ])
 
 
