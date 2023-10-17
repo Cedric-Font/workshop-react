@@ -1,6 +1,9 @@
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import './App.css'
+import NavBar from './component/Navbar'
+import Footer from './component/Footer'
 import Categories from './component/Categories'
+
 
 
 function App() {
@@ -22,7 +25,9 @@ function App() {
   const router = createBrowserRouter([
     {
       path: '/',
+
       element:
+      <NavBar/>
       <div className='colorDiv' >
       <div 
       className='mainContainer' > 
@@ -32,10 +37,11 @@ function App() {
       <Categories acceuil={acceuil} />
       </div>
       </div>
+
     },
     {
       path: '/starters',
-      element: <h1>Starters</h1>
+      element: <h1>starters</h1>
     },
     {
       path: '/dishes',
@@ -44,8 +50,9 @@ function App() {
     {
       path: '/desserts',
       element: <h1>Desserts</h1>
-    }
+    },
   ])
+
 
 
 
@@ -62,6 +69,7 @@ function App() {
   
   
   )
+
 
 }
 

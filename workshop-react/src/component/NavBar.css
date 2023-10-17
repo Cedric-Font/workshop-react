@@ -1,0 +1,94 @@
+.topnav {
+    overflow: hidden;
+    background-color: #DAD6B7;
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .menu-icon{
+    color: black;
+  }
+
+  img{
+    width: 15%;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  P{
+    color: black;
+    font-size: 250%;
+    font-family:cursive;
+    margin: 0;
+    
+
+  }
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: auto;
+    
+  }
+  
+  .topnav a:hover {
+    background-color: #bbbbbb00;
+    color: white;
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+ 
+  @media screen and (max-width: 600px) {
+    .topnav a {
+      display: none;
+    }
+    .topnav a.icon {
+      float: right;
+      display: flex;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content:flex-start;
+      align-items: flex-start;
+
+    }
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: flex;
+      text-align: left;
+      flex-direction: column;
+      padding-left: 6%;
+    }
+  }
+ .logo-title{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+ }
+
+ P{
+    font-size: 150%;
+    padding-left: 60px;
+ }
+
+ img{
+    width: 20%;
+ }
