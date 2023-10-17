@@ -12,6 +12,7 @@ import Categories from './component/Categories'
 
 
 
+
 function App() {
   let acceuil = [
 
@@ -33,7 +34,7 @@ function App() {
       path: '/',
 
       element:
-      
+      <div>
       <NavBar/>
       <div className='colorDiv' >
       <div 
@@ -44,12 +45,22 @@ function App() {
       <Categories acceuil={acceuil} />
       </div>
       </div>
+      </div>
 
     },
     {
       path: '/starters',
-      element: <Starters />
+      element: 
+      <div className="mainContainer" >
+      <Starters />
+      </div>
     },
+
+    {
+      path: '/recipe/:id',
+      element: <Recipe />
+    },
+
     {
       path: '/recipe/:id',
       element: <Recipe />

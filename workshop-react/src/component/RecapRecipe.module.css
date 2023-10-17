@@ -1,0 +1,39 @@
+
+.img{
+    width: 50%;
+    border-radius: 20px;
+    box-shadow: 10px 5px 10px rgb(172, 172, 172);
+}
+
+.mainContainer{
+    display: flex;
+    margin-top: 10%;
+    margin-left: 5%;
+    
+}
+body{
+    background-color: #e2e1dc;
+    height: 100rem;
+}
+
+.name{
+    color: rgb(219, 88, 41);
+    font-weight: 900;
+}
+
+.descriptionRecipe{
+    color: #76592A;
+    font-weight: 500;
+}
+
+.time{
+    color: #76592A;
+}
+
+.img:hover{
+    scale: 1.01;
+
+}
+
+
+
