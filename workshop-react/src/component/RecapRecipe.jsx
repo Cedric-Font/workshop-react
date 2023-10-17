@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import styles from './RecapRecipe.module.css'
 
 function RecapRecipe({ recipe, setDisplay }) {
@@ -12,6 +13,19 @@ function RecapRecipe({ recipe, setDisplay }) {
                     <li className={styles.time} >{recipe.cookingTime}</li>
                 </ul>
             </div>
+=======
+function RecapRecipe({ props }) {
+
+    return (
+        <>
+            {console.log(props)}
+            <img src={props.imgSrc} alt={props.nameRecipe} />
+            <ul>
+                <li>{props.nameRecipe}</li>
+                <li>{props.descriptionRecipe}</li>
+                <li>{props.cookingTime}</li>
+            </ul>
+>>>>>>> 8a44ee4a36fa4f815ad62ce3965135c38d9965a9
         </>
 
     )
