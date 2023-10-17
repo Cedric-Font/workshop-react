@@ -14,25 +14,25 @@ function NavBar() {
 
   return (
     <>
-      <Footer />
+    <Footer/>
 
-      <nav>
-        <div className="topnav" id="myTopnav">
-          <div className="logo-title">
-            <img src="./src/images/logo3.png" alt="" />
-            <p>Pom d’API</p>
-          </div>
-          <a href="#home" className="active">
-            Home
-          </a>
-          <a href="#">Starters</a>
-          <a href="#">Dishes</a>
-          <a href="#">Desserts</a>
-          <a href="#" className="icon" onClick={myFunction}>
-            <i className="menu-icon">☰</i>
-          </a>
+    <nav>
+      <div className="topnav" id="myTopnav">
+        <div className="logo-title">
+          <img src="./src/images/logo3.png" alt="" />
+          <p>Pom d’API</p>
         </div>
-      </nav>
+        <a href="#home" className="active">
+          Home
+        </a>
+        <a href="#">Starters</a>
+        <a href="#">Dishes</a>
+        <a href="#">Desserts</a>
+        <a href="#" className="icon" onClick={myFunction}>
+          <i className="menu-icon">☰</i>
+        </a>
+      </div>
+    </nav>
     </>
   );
 }
