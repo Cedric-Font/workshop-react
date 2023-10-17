@@ -33,6 +33,7 @@ function App() {
       path: '/',
 
       element:
+      
       <NavBar/>
       <div className='colorDiv' >
       <div 
